@@ -34,13 +34,21 @@ ui <- fluidPage(
 
       /* Custom CSS for table row hover effect */
       table.dataTable tbody tr:hover {
-        background-color: #f0e68c; /* Farbe beim Hover */
+        background-color: #FFC1CC; /* Farbe beim Hover */
         color: black;
       }
       
-      .table tbody tr.odd {
-        background-color: #acdfd8; !important /* Farbe beim Hover */
-        color: black;
+      table.dataTable tbody tr.selected td, table.dataTable tbody td.selected {
+        border-top-color: white !important;
+        box-shadow: inset 0 0 0 9999px #C71585 !important;
+      }
+
+      table.dataTable tbody tr:active td {
+        background-color: #C71585 !important;
+      }
+
+      :root {
+        --dt-row-selected: transparent !important;
       }
       
       .compact-text {
@@ -85,6 +93,7 @@ ui <- fluidPage(
             # Table tab: DataTable output for displaying the Pokemon table
             nav_panel("Table",
                       tags$div(class="table",
+                               id = "pokemontable",
                                dataTableOutput("pokemon_table"))
             )
           ) # End of navset_card
