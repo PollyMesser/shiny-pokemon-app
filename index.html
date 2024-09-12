@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="pokemon shiny-app">
+    <meta name="author" content="Claudia Spannbauer">
+    <title>Shiny-Apps</title>
+
+
+    <!-- Bootstrap core CSS -->
+<link href="./bootstrap.min.css" rel="stylesheet">
+
+    <style>
+       .iframe-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto; /* Container passt sich der Höhe des iframes an */
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      .svg-container {
+        width: 100;
+        max-width: 400px; /* maximale Breite für größere Bildschirme */
+        margin: auto;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+  </head>
+  <body>
+    
+<main>
+  <div class="container py-4">
+    <header class="pb-3 mb-4 border-bottom">
+      <a href="https:/spannbauer.eu" class="d-flex align-items-center text-dark text-decoration-none">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+          <!-- Background -->
+          <rect width="100" height="100" fill="white" />
+        
+          <!-- X-axis -->
+          <line x1="10" y1="90" x2="90" y2="90" stroke="pink" stroke-width="2" />
+        
+          <!-- Y-axis -->
+          <line x1="10" y1="90" x2="10" y2="10" stroke="pink" stroke-width="2" />
+        
+          <!-- Normal distribution curve -->
+          <path d="M 10 90 Q 50 20, 90 90" fill="none" stroke="pink" stroke-width="2"/>
+        
+          <!-- Ticks on the x-axis -->
+          <line x1="30" y1="88" x2="30" y2="92" stroke="pink" stroke-width="2" />
+          <line x1="50" y1="88" x2="50" y2="92" stroke="pink" stroke-width="2" />
+          <line x1="70" y1="88" x2="70" y2="92" stroke="pink" stroke-width="2" />
+        
+          <!-- Ticks on the y-axis -->
+          <line x1="8" y1="70" x2="12" y2="70" stroke="pink" stroke-width="2" />
+          <line x1="8" y1="50" x2="12" y2="50" stroke="pink" stroke-width="2" />
+          <line x1="8" y1="30" x2="12" y2="30" stroke="pink" stroke-width="2" />
+        
+          <!-- Letters C and S -->
+          <text x="20" y="50" fill="violet" font-size="30" font-family="Arial" transform="rotate(-20 40,40)">C</text>
+          <text x="50" y="60" fill="violet" font-size="30" font-family="Arial" transform="rotate(-20 70,70)">S</text>
+        </svg>
+        
+        <span class="fs-4">Welcome to my Shiny Site of Life</span>
+
+        <div class="svg-container"></div>
+        
+      </div>
+      </a>
+      
+    </header>
+
+    <div class="p-5 mb-4 bg-light rounded-3 border iframe-container" id="iframe-container">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Little Poke App</h1>
+        <iframe src="./shiny-pokemon-app/" width="100%" height="800" style="border: none;"></iframe> 
+      </div>
+    </div>
+
+    <div class="p-5 mb-4 bg-light rounded-3 border iframe-container">
+      <div class="container-fluid py-5">
+        <div class="svg-container">
+          <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto;">
+            <!-- Bar Chart -->
+            <rect x="100" y="150" width="50" height="200" fill="#ff69b4" />
+            <rect x="170" y="100" width="50" height="250" fill="#8a2be2" />
+            <rect x="240" y="180" width="50" height="170" fill="#f4c430" />
+            <rect x="310" y="120" width="50" height="230" fill="#006f70" />
+    
+            <!-- Bar Chart Labels -->
+            <text x="115" y="370" font-size="14" fill="black">CS</text>
+            <text x="180" y="370" font-size="14" fill="black">stats</text>
+            <text x="260" y="370" font-size="14" fill="black">R</text>
+            <text x="315" y="370" font-size="14" fill="black">Python</text>
+    
+            <!-- Value Indicators -->
+            <rect x="100" y="400" width="260" height="50" fill="#8a2be2" />
+            <text x="160" y="435" font-size="18" fill="white">SpannbaueR Stats</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+   
+
+    <footer class="pt-3 mt-4 text-muted border-top">
+      &copy; 2024 Claudia Spannbauer
+    </footer>
+  </div>
+</main>
+
+
+    
+  </body>
+</html>
