@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="pokemon shiny-app">
+    <meta name="description" content="">
     <meta name="author" content="Claudia Spannbauer">
     <title>Shiny-Apps</title>
 
@@ -18,10 +18,11 @@
         align-items: center;
         height: auto; /* Container passt sich der Höhe des iframes an */
         width: 100%;
+        border: 1px solid grey;
       }
-      
-      iframe {
-        width: 100%; /* Ensures the iframe takes the full width of its container */
+
+      #iframe {
+        border: 1px solid orange;
       }
 
       .bd-placeholder-img {
@@ -31,6 +32,10 @@
         -moz-user-select: none;
         user-select: none;
       }
+
+      .container-fluid .py-5 {
+        width: 100%;
+      } 
 
       .svg-container {
         width: 100;
@@ -92,13 +97,13 @@
     </header>
 
     <div class="p-5 mb-4 bg-light rounded-3 border iframe-container" id="iframe-container">
-      <div class="container-fluid py-5">
+      <div class="container-fluid py-5" style="width: 100%;">
         <h1 class="display-5 fw-bold">Little Poke App</h1>
-        <iframe src="https://2d2vv3-claudia-spannbauer.shinyapps.io/poke-shine/" width="100%" height="800" style="border: 1px solid grey;"></iframe> 
+        <iframe src="https://2d2vv3-claudia-spannbauer.shinyapps.io/poke-shine/" style="width: 100%; height: 600px";></iframe> 
       </div>
     </div>
 
-    <div class="p-5 mb-4 bg-light rounded-3 border iframe-container">
+        <div class="p-5 mb-4 bg-light rounded-3 border iframe-container">
       <div class="container-fluid py-5">
         <div class="svg-container">
           <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto;">
